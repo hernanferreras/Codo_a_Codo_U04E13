@@ -1,21 +1,40 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package u04e13;
 
-/**
- *
- * @author hernan
- */
+import java.util.Scanner;
 public class U04E13 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+       int mes;
+       Scanner entrada = new Scanner(System.in);
+       System.out.print("Ingrese el numero de mes: ");
+       mes = entrada.nextInt();
+       switch (mes){
+            case 1:
+               System.out.print("ENERO"); break;
+            case 2:
+               System.out.print("FEBRERO"); break;
+            case 3:
+               System.out.print("MARZO"); break;
+            case 4:
+               System.out.print("ABRIL"); break;
+            case 5:
+               System.out.print("MAYO"); break;
+            case 6:
+               System.out.print("JUNIO"); break;
+            case 7:
+               System.out.print("JULIO"); break;
+            case 8:
+               System.out.print("AGOSTO"); break;
+            case 9:
+               System.out.print("SEPTIEMBRE"); break;
+            case 10:
+               System.out.print("OCTUBRE"); break;
+            case 11:
+               System.out.print("NOVIEMBRE"); break;
+            case 12:
+               System.out.print("DICIEMBRE"); break;
+               default:
+               System.out.print("El nro. ingresado no corresponde a un mes");
+       }
     }
-    
 }
